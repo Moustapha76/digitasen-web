@@ -12,7 +12,7 @@
     --color1: #0367B0;
     --color2: #01AEEA;
     --color3: #1e1e1e;
-    --color4: #043355;
+    --color4: #064573;
     --letter-spacing: 1px;
 }
 /* preloader */
@@ -1700,10 +1700,10 @@ section#portfolio .title {
     margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: 
-    "item1 item2 item3"
-    "item1 item3 item4";
-    grid-auto-rows: 200px;
+    grid-template-areas:
+        "item1 item3 item2"
+        "item1 item4 item2";
+    grid-auto-rows: 300px;
     gap: 1rem;
 }
 
@@ -1984,6 +1984,7 @@ footer section:nth-child(2) {
     color: var(--color0);
     letter-spacing: 1px;
     font-size: 18px;
+    align-items: center;
 }
 
 footer section:nth-child(2) img {
