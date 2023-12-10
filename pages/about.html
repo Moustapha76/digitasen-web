@@ -16,13 +16,30 @@
 <body>
     <header class="header-intern">
         <nav class="navbar">
-            <a href="#" class="logo"><img src="../public/assets/logo.svg" alt="Accountasen"></a>
-            <label id="menubar" for="menu"><i class="fa-solid fa-bars"></i></label>
-            <input type="checkbox" id="menu">
-            <ul class="menu-list">
-                <li><a href="..index.html">Accueil</a></li>
-                <li><a href="./pages/about.html">L'Agence</a></li>
-                <li class="item-parent">
+            <div class="navbar-fixed">
+                <div class="infos">
+                    <small class="me-3 text-light"><i class="fa fa-map-marker-alt"></i>122 Mostaqbal, Casablanca</small>
+                    <small class="me-3 text-light"><i class="fa fa-phone"></i>+212 656 716 530</small>
+                    <small class="text-light"><i class="fa fa-envelope-open"></i>digitasen@gmail.com</small>
+                </div>
+                <div class="rs">
+                    <a class="btn-rs" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn-rs" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn-rs" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn-rs" href=""><i class="fab fa-instagram"></i></a>
+                    <a class="btn-rs" href=""><i class="fab fa-youtube"></i></a>
+                </div>
+                <!-- <a href="" class="devis">Se connecter</a> -->
+            </div>
+            <div class="navbar-fluid">
+                <a href="#" class="logo"><img src="../public/assets/logo.svg" alt="Digitasen"></a>
+                <label id="menubar" for="menu"><i class="fa-solid fa-bars"></i></label>
+                <input type="checkbox" id="menu">
+                <ul class="menu-list">
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="#">L'Agence</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li class="item-parent">
                     <a href="#">Services <i class="fa-solid fa-chevron-down"></i></a>
                     <ul class="submenu">
                         <li><a href="#">Création de site Web</a></li>
@@ -30,115 +47,315 @@
                         <li><a href="#">Référencement</a></li>
                         <li><a href="#">Gestion de contenu</a></li>
                     </ul>
-                </li>
-                <li><a href="./pages/contact.html">Contact</a></li>
-            </ul>
-            <a href="tel:+212 65 671 6530" class="tel"><i class="fa-solid fa-phone"></i> +212 65 671 6530</a>
+                    </li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+                <a href="" class="devis">Demande de devis</a>
+            </div>
         </nav>
         <div class="banner-intern">
-           <h1>About us</h1>
+           <h1>A propos de l'agence</h1>
         </div>
     </header>
     <main>
         <section id="about">
             <div class="text-bloc">
                 <div class="title">
-                    <span>About Company</span>
-                    <h2>Accounting Services for the Modern Entrepreneur.</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                    <span>Notre mission</span>
+                    <h2>Acquérir de nouveaux clients représente une tâche ardue !</h2>
+                    <p>Le monde des affaires est immense, agité et de plus en plus compétitif. Se connecter avec les bonnes personnes au moment opportun demande des compétences spécifiques, du temps, des moyens et une stratégie bien pensée. C'est pourtant essentiel pour développer votre entreprise.</p>
+                    <p>Découvrez tous les services de Digitasen et entrez dans un monde de contacts</p>
+                    <p>Nos équipes sont à votre disposition</p>
                 </div>
                 <div class="jumbotron">
                     <img src="../public/assets/icones/light.svg" alt="idea">
                     <div class="description">
-                        <h3>The Idea</h3>
-                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam aspernatur maxime id numquam corrupti aperiam aliquam distinctio. Recusandae magnam sit a, id rerum ducimus beatae? Blanditiis, fuga voluptatum? Quaerat, ab.</span>
-                        <span>Dictum senectus cursus ultrices morbi est himenaeos per condimentum faucibus pede adipiscing</span>
+                        <h3>La clé du succès réside dans votre visibilité sur internet !</h3>
+                        <p>Il est crucial de se rappeler que derrière chaque défi se cache une opportunité.</p>
+                        <p>Grâce à une forte présence en ligne, votre entreprise peut toucher un public élargi, attirer l'attention de prospects qualifiés et transformer ces liens en relations commerciales solides.</p>
+                    </div>
+                </div>
+                <div class="jumbotron">
+                    <div class="description">
+                        <h3>Notre expertise réside dans la connexion entre les entreprises et leurs futurs clients.</h3>
                     </div>
                 </div>
             </div>
             <div class="img-bloc">
-                <img src="../public/assets/the-team-that-wins.jpg" alt="the-team-that-wins">
+                <img src="../public/assets/agence/pp.jpg" alt="femme-avec-laptop.jpg">
                 <span class="videoPlay"><i class="fa-solid fa-play"></i></span>
             </div>
         </section>
-        <section id="history">
-            <div class="title">
-                <h2>Our History</h2>
-            </div>
+        <section id="team">
+            <h2>Notre équipe</h2>
             <div class="container">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, velit animi sequi dignissimos aliquam, dolores odit harum quod earum fugiat libero fugit sint culpa saepe nihil. Id minima voluptatem earum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores dicta earum at iusto magnam culpa voluptate numquam excepturi iure ab, optio eligendi ratione molestiae vitae quis quibusdam facere nihil aliquid? ipsam error sint beatae obcaecati! f</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, velit animi sequi dignissimos aliquam, dolores odit harum quod earum fugiat libero fugit sint culpa saepe nihil. Id minima voluptatem earum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores dicta earum at iusto magnam culpa voluptate numquam excepturi iure ab, optio eligendi ratione molestiae vitae quis quibusdam facere nihil aliquid? ipsam error sint beatae obcaecati! f</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, velit animi sequi dignissimos aliquam, dolores odit harum quod earum fugiat libero fugit sint culpa saepe nihil. Id minima voluptatem earum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores dicta earum at iusto magnam culpa voluptate numquam excepturi iure ab, optio eligendi ratione molestiae vitae quis quibusdam facere nihil aliquid? ipsam error sint beatae obcaecati! f</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, repellendus quasi, ullam pariatur laudantium possimus veritatis accusantium enim atque amet magni. Dicta obcaecati eos, minima excepturi omnis tempore! Mollitia, amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio labore doloremque repellendus maxime itaque quaerat omnis, quis impedit voluptate tempore, nemo cupiditate vel corrupti maiores ipsam error sint beatae obcaecati!</p>
-            </div>
-            <div class="gallery">
-                <div class="img-bloc">
-                    <img src="../public/assets/business-consultation.jpg" alt="gallery">
+                <div class="flip-bx">
+                    <div class="front">
+                        <img src="../public/assets/agence/team/Backend.jpg" alt="member">
+                    </div>
+                    <div class="back">
+                        <div class="inner">
+                            <div class="content">
+                                <span class="name">
+                                    <a href="#">Ousmane Fall</a>
+                                </span>
+                                <span class="position">Backend</span>
+                                <ul class="social">
+                                    <li>
+                                        <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="img-bloc">
-                    <img src="../public/assets/business-team-office-worker-entrepreneur-concept.jpg" alt="gallery">
+                <div class="flip-bx">
+                    <div class="front">
+                        <img src="../public/assets/agence/team/commercial.jpg" alt="member">
+                    </div>
+                    <div class="back">
+                        <div class="inner">
+                            <div class="content">
+                                <span class="name">
+                                    <a href="#">Aminata Fall</a>
+                                </span>
+                                <span class="position">Commerciale</span>
+                                <ul class="social">
+                                    <li>
+                                        <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="img-bloc">
-                    <img src="../public/assets/redhead-curly-woman-office-worker-analyzes-data-makes-accounting-report-poses-in-coworking-office.jpg" alt="gallery">
+                <div class="flip-bx">
+                    <div class="front">
+                        <img src="../public/assets/agence/team/designer.jpg" alt="member ">
+                    </div>
+                    <div class="back ">
+                        <div class="inner ">
+                            <div class="content ">
+                                <span class="name ">
+                                    <a href="# ">Youssoufa Ndiaye</a>
+                                </span>
+                                <span class="position">Designer</span>
+                                <ul class="social">
+                                    <li>
+                                        <a href="https://www.facebook.com "><i class="fa-brands fa-facebook-f "></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.twitter.com "><i class="fa-brands fa-twitter "></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com "><i class="fa-brands fa-instagram "></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="img-bloc">
-                    <img src="../public/assets/young-african-american-businessman-making-phone-call-indoors-in-office-at-night.jpg" alt="gallery">
+                <div class="flip-bx">
+                    <div class="front">
+                        <img src="../public/assets/agence/team/frentend.jpg" alt="member ">
+                    </div>
+                    <div class="back ">
+                        <div class="inner ">
+                            <div class="content ">
+                                <span class="name ">
+                                    <a href="#">Victor Sall</a>
+                                </span>
+                                <span class="position">Frontend</span>
+                                <ul class="social ">
+                                    <li>
+                                        <a href="https://www.facebook.com "><i class="fa-brands fa-facebook-f "></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.twitter.com "><i class="fa-brands fa-twitter "></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com "><i class="fa-brands fa-instagram "></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-bx">
+                    <div class="front">
+                        <img src="../public/assets/agence/team/fullStack.jpg" alt="member ">
+                    </div>
+                    <div class="back ">
+                        <div class="inner ">
+                            <div class="content ">
+                                <span class="name ">
+                                    <a href="# ">Mouusa Ba</a>
+                                </span>
+                                <span class="position">FullStack</span>
+                                <ul class="social">
+                                    <li>
+                                        <a href="https://www.facebook.com "><i class="fa-brands fa-facebook-f "></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.twitter.com "><i class="fa-brands fa-twitter "></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com "><i class="fa-brands fa-instagram "></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-bx">
+                    <div class="front">
+                        <img src="../public/assets/agence/team/graphiste.jpg" alt="member ">
+                    </div>
+                    <div class="back ">
+                        <div class="inner ">
+                            <div class="content ">
+                                <span class="name ">
+                                    <a href="#">Ibrahima Diop</a>
+                                </span>
+                                <span class="position">Graphiste</span>
+                                <ul class="social ">
+                                    <li>
+                                        <a href="https://www.facebook.com "><i class="fa-brands fa-facebook-f "></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.twitter.com "><i class="fa-brands fa-twitter "></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com "><i class="fa-brands fa-instagram "></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-bx">
+                    <div class="front">
+                        <img src="../public/assets/agence/team/Joseph.jpg" alt="member ">
+                    </div>
+                    <div class="back ">
+                        <div class="inner ">
+                            <div class="content ">
+                                <span class="name ">
+                                    <a href="#">Joseph Diop</a>
+                                </span>
+                                <span class="position">Graphiste</span>
+                                <ul class="social ">
+                                    <li>
+                                        <a href="https://www.facebook.com "><i class="fa-brands fa-facebook-f "></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.twitter.com "><i class="fa-brands fa-twitter "></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com "><i class="fa-brands fa-instagram "></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-bx">
+                    <div class="front">
+                        <img src="../public/assets/agence/team/Modou.jpg" alt="member ">
+                    </div>
+                    <div class="back ">
+                        <div class="inner ">
+                            <div class="content ">
+                                <span class="name ">
+                                    <a href="#">Modou Fall</a>
+                                </span>
+                                <span class="position">FullStack</span>
+                                <ul class="social ">
+                                    <li>
+                                        <a href="https://www.facebook.com "><i class="fa-brands fa-facebook-f "></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.twitter.com "><i class="fa-brands fa-twitter "></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com "><i class="fa-brands fa-instagram "></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
     <footer>
         <div class="bande1">
-            <p>Sign up our newsletter to get update information, news or insight.</p>
+            <p>Inscrivez-vous à notre newsletter pour obtenir des informations actualisées, des nouvelles ou des informations.</p>
             <form action="#">
-                <input type="text" placeholder="Enter your email"> <input type="submit" class="btn" value="Sign up">
+                <input type="text" placeholder="Saisissez votre mail"> <input type="submit" class="btn" value="S'inscrire">
             </form>
         </div>
         <div class="bande2">
             <div class="item">
-                <img src="../public/assets/icones/call.svg" alt="call us">
+                <img src="../public/assets/icones/call.svg" alt="Prenez un rendez-vous">
                 <p>
-                    <span>Call us</span>
+                    <span>Prenez un rendez-vous</span>
                     <span>+212 656 716 530</span>
                 </p>
             </div>
             <div class="item">
                 <img src="../public/assets/icones/map.svg" alt="location">
                 <p>
-                    <span>Headquarter</span>
+                    <span>Adresse</span>
                     <span>20280 Mostaqbal, Casablanca</span>
                 </p>
             </div>
             <div class="item">
-                <img src="../public/assets/icones/mail.svg" alt="email us">
+                <img src="../public/assets/icones/mail.svg" alt="email">
                 <p>
-                    <span>Email us</span>
-                    <span>moustapha.md26@gmail.com</span>
+                    <span>Email</span>
+                    <span>digitasen@gmail.com</span>
                 </p>
             </div>
         </div>
         <div class="bande3">
             <section>
                 <div class="group">
-                    <h5>Service</h5>
+                    <h5>Liens rapides</h5>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="./pages/about.html">L'Agence</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="./pages/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="group">
+                    <h5>Services</h5>
                     <ul>
                         <li>
-                            <a href="#">Tax</a>
+                            <a href="#">Création de site Web</a>
                         </li>
                         <li>
-                            <a href="#">Consulting</a>
+                            <a href="#">Refonte Site Web</a>
                         </li>
                         <li>
-                            <a href="#">Audit & Assurance</a>
+                            <a href="#">Référencement</a>
                         </li>
                         <li>
-                            <a href="#">Mergers & Acquisitions</a>
-                        </li>
-                        <li>
-                            <a href="#">Risk & Financial Advisory</a>
-                        </li>
-                        <li>
-                            <a href="#">Analytics</a>
+                            <a href="#">Gestion de contenu</a>
                         </li>
                     </ul>
                 </div>
@@ -157,45 +374,19 @@
                         <li>
                             <a href="#">Government & Public Services</a>
                         </li>
-                        <li>
-                            <a href="#">Life Sciences & Health Care</a>
-                        </li>
-                        <li>
-                            <a href="#">Technology, Media & Telecommunications</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="group">
-                    <h5>Company</h5>
-                    <ul>
-                        <li>
-                            <a href="#">About Us</a>
-                        </li>
-                        <li>
-                            <a href="#">Leadership</a>
-                        </li>
-                        <li>
-                            <a href="#">Careers</a>
-                        </li>
-                        <li>
-                            <a href="#">Partner</a>
-                        </li>
-                        <li>
-                            <a href="#">Article & News</a>
-                        </li>
                     </ul>
                 </div>
                 <div class="group">
                     <h5>Support</h5>
                     <ul>
                         <li>
-                            <a href="#">Help Center</a>
+                            <a href="#">Service client</a>
                         </li>
                         <li>
                             <a href="#">FAQ</a>
                         </li>
                         <li>
-                            <a href="contact.html">Contactez-nous</a>
+                            <a href="#">Contactez-nous</a>
                         </li>
                     </ul>
                     <div class="rs">
@@ -207,7 +398,7 @@
             </section>
             <section>
                 <a href="#"><img src="../public/assets/logo.svg" alt="logo du site"></a>
-                <p>Copyright © 2021 DCS, All rights reserved.</p>
+                <p>Copyright © 2023 Digitasen, Tous droits réservés.</p>
             </section>
         </div>
     </footer>
