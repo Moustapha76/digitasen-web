@@ -496,6 +496,25 @@ body {
     top: 0px !important;
 }
 
+.title {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.title:before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background: var(--color2);
+    bottom: -15px;
+}
+
+section#package .title:before, section#advice .title:before, section#Testimony .title:before,section#faq .title:before {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .text-bloc {
     width: 50%;
 }
@@ -757,7 +776,7 @@ section#steps .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-top: 2rem;
-    gap: 0px;
+    gap: 10px;
 }
 
 section#about\ atout {
@@ -1133,14 +1152,71 @@ main .accroche {
     flex-direction: column;
     justify-content: space-between;
 }
+section.portfolio {
+    display: flex;
+    gap: 20px;
+    padding: 5% 10%;
+}
 
+section.portfolio .item-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+    width: 90%;
+}
+
+section.portfolio .item-website {
+    position: relative;
+    overflow: hidden;
+}
+
+section.portfolio .item-website a {
+    position: absolute;
+    inset: 0;
+    background: #000c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all .5s cubic-bezier(0.86, -0.18, 0.2, 0.69);
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+section.portfolio .item-website:hover a {
+    opacity: 1;
+}
+
+section.portfolio .item-website a i {
+    position: relative;
+    top: -10px;
+    font-size: 13px;
+    color: var(--color2);
+    padding-left: 30px;
+    opacity: 0;
+    transition: all .5s linear .3s;
+}
+
+section.portfolio .item-website:hover a i {
+    padding-left: 10px;
+    opacity: 1;
+}
+
+section.portfolio .item-website img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section.portfolio .title {display: flex;flex-direction: column;align-items: flex-start;justify-content: flex-start;position: relative;height: fit-content;}
 section#steps .container .bloc {
     width: auto;
     justify-content: flex-start;
     transition: all .3s linear;
     color: var(--color3);
     box-shadow: none;
-    border: 1px solid #0078a21a;
+    border: 1px solid #0000002e;
 }
 
 section#steps .container .bloc:hover {
@@ -1166,8 +1242,8 @@ section#steps .container .bloc:hover {
     right: 9px;
     top: -80px;
     font-weight: bold;
-    opacity: 0.5;
-    font-size: 55px;
+    opacity: 1;
+    font-size: 35px;
     font-family: var(--font1);
 }
 
@@ -1206,14 +1282,17 @@ main .accroche .bloc h3 {
 }
 
 .bloc span {
-    opacity: .8;
     font-size: 18px;
 }
 
 .custom-package h4 span {
     display: block;
     font-size: 20px;
-    font-weight: 100;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.5;
+    font-family: var(--font4);
+    padding-top: 20px;
 }
 
 .custom-package h4 {
@@ -1607,9 +1686,9 @@ section#serice {
 .item-service {
     display: flex;
     flex-direction: column;
-    height: 480px;
     box-shadow: 0px 10px 50px #0000000f;
-    background: var(--color0);
+    position: relative;
+    overflow: hidden;
 }
 
 .item-service:hover img {
@@ -1618,7 +1697,7 @@ section#serice {
 
 .item-service .img-bloc {
     width: 100%;
-    height: 270px;
+    height: 480px;
     overflow: hidden;
 }
 
@@ -1631,7 +1710,7 @@ section#serice {
 
 .item-service .btn {
     padding: 4px 15px;
-    margin-top: 20px;
+    margin: 10px 0 30px;
 }
 
 .item-service .description {
@@ -1640,7 +1719,22 @@ section#serice {
     align-items: flex-start;
     text-align: left;
     line-height: 1.7;
-    padding: 15px 20px;
+    padding: 0px 18px;
+    position: absolute;
+    justify-content: flex-end;
+    height: 480px;
+    top: 0px;
+    left: 0;
+    background: linear-gradient(15deg, #000000,#00000069,transparent);
+    color: var(--color0);
+    transform: translateY(70%);
+    opacity: 0;
+    transition: all .3s linear;
+}
+
+.item-service:hover .description {
+    transform: translateY(0);
+    opacity: 1;
 }
 
 .item-service .description p {
@@ -1649,7 +1743,7 @@ section#serice {
 }
 
 .item-service .description h4 {
-    font-size: 24px;
+    font-size: 36px;
 }
 
 
@@ -1762,6 +1856,12 @@ section#team {
     grid-gap: 20px;
 }
 
+section#team .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 section#team .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -1769,8 +1869,8 @@ section#team .container {
 }
 
 section#team h2 {
-    font-size: 48px;
-    padding-bottom: 30px;
+    padding-bottom: 5px;
+    text-align: center;
 }
 
 .flip-bx {
@@ -2179,15 +2279,25 @@ footer section:nth-child(2) {
     display: flex;
     justify-content: space-between;
     background: var(--color4);
-    padding: 30px 10%;
+    padding: 15px 10%;
     color: var(--color0);
     letter-spacing: 1px;
     font-size: 18px;
     align-items: center;
 }
 
+footer section:nth-child(2) a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer section:nth-child(2) p {
+    font-size: 16px;
+}
+
 footer section:nth-child(2) img {
-    width: 200px;
+    width: 180px;
 }
 
 footer section:nth-child(1) {
@@ -2261,11 +2371,11 @@ footer section:nth-child(1) .group ul li a:hover {
 /* R E S P O N S I V E */
 
 
-/* 320px — 480px: Mobile devices 
-481px — 768px: iPads, Tablets 
-769px — 1024px: Small screens, laptops 
-1025px — 1200px: Desktops, large screens 
-1201px and more — Extra large screens, TV */
+/* 320px â€” 480px: Mobile devices 
+481px â€” 768px: iPads, Tablets 
+769px â€” 1024px: Small screens, laptops 
+1025px â€” 1200px: Desktops, large screens 
+1201px and more â€” Extra large screens, TV */
 
 @media (max-width: 1400px) {
     .banner h1 {
@@ -2529,5 +2639,4 @@ footer section:nth-child(1) .group ul li a:hover {
         left: 40%;
     }
 }
-
 @media (max-width: 320px) {} 

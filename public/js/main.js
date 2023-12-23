@@ -1,14 +1,14 @@
-let itemParent = document.querySelector('nav.navbar ul.menu-list li.item-parent');
-let itemChild = document.querySelector('nav.navbar ul.menu-list li.item-parent .submenu');
-itemParent.addEventListener('mouseenter', function() {
-    itemChild.style.visibility = "visible"
-})
-itemChild.addEventListener('mouseover', function() {
-    itemChild.style.visibility = "visible"
-})
-itemChild.addEventListener('mouseout', function() {
-    itemChild.style.visibility = "hidden"
-})
+// let itemParent = document.querySelector('nav.navbar ul.menu-list li.item-parent');
+// let itemChild = document.querySelector('nav.navbar ul.menu-list li.item-parent .submenu');
+// itemParent.addEventListener('mouseenter', function() {
+//     itemChild.style.visibility = "visible"
+// })
+// itemChild.addEventListener('mouseover', function() {
+//     itemChild.style.visibility = "visible"
+// })
+// itemChild.addEventListener('mouseout', function() {
+//     itemChild.style.visibility = "hidden"
+// })
 
 const playvid = document.querySelector('span.videoPlay');
 const stopvid = document.querySelector('span.videoStop');
