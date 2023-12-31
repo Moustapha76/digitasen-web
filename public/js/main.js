@@ -9,7 +9,7 @@
 // itemChild.addEventListener('mouseout', function() {
 //     itemChild.style.visibility = "hidden"
 // })
-
+change(); 
 const playvid = document.querySelector('span.videoPlay');
 const stopvid = document.querySelector('span.videoStop');
 const popup = document.querySelector('.popup');
@@ -95,3 +95,27 @@ $(function() {
     // Run the show!
     filterList.init();
 });
+
+function change() {
+    let results = Array.from(document.querySelectorAll('.result > div'));
+    let checkboxes = Array.from(document.querySelectorAll('.checkbox label'));
+    // Hide all results
+    results.forEach(function(result) {
+      result.style.display = 'none';
+    });
+    checkboxes.forEach(function(checkb) {
+      checkb.classList.remove('filterChecked');
+    });
+    // Filter results to only those that meet ALL requirements:
+    Array.from(document.querySelectorAll('.filter input[rel]:checked'), function(input) {
+        const attrib = input.getAttribute('rel');
+        input.parentElement.classList.add('filterChecked');
+        results = results.filter(function(result) {
+            return result.classList.contains(attrib);
+        });
+    });
+    // Show those filtered results:
+    results.forEach(function(result) {
+        result.style.display = 'flex';
+    });
+}
